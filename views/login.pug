@@ -1,0 +1,24 @@
+extends base
+
+block content
+  .main
+    .box.d-flex.border.border-5.rounded.mx-auto.p-5.transparent-gradient
+      form.w-100.form-login
+        .mb-5
+          h1.text-success LOG INTRO YOUR ACCOUNT
+        .mb-3
+          label.form-label(for='email') Email address
+          input#email.form-control(type='email' aria-describedby='emailHelp')
+          #emailHelp.form-text We&apos;ll never share your email with anyone else.
+        .mb-3
+          label.form-label(for='password') Password
+          input#password.form-control(type='password')
+          
+        button.btn.btn-lg.btn-success(type='submit') Log in
+
+      .hide.w-100
+        .d-flex.flex-column.align-items-center
+          img.logo-greencode-lg.mb-5(src="/img/logo/greencode.png" alt="GreenCode logo")
+          h4.text-success.mb-2 Don't have a GreenCode account?
+          h5.mb-3 Sign up now!
+          a.btn.btn-sm.btn-light(href="/signup") Sign up
